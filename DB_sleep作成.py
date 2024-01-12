@@ -43,7 +43,6 @@ delete_condition = "ROWID <= 7;"
 sql_delete = f"DELETE FROM sleep WHERE {delete_condition}"
 cur.execute(sql_delete)
 con.commit()
-
 # データを取得して表示
 sql_select = 'SELECT * FROM sleep;'
 cur.execute(sql_select)
